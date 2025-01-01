@@ -49,7 +49,7 @@ questions.push(new Quiz("Which language is spoken in Brazil?", "Spanish", "Portu
 // Add more questions as needed...
 
 // Variables
-let currentQuestionIndex = 19;
+let currentQuestionIndex = 0;
 let score = 0;
 let correct = 0;
 let wrong = 0;
@@ -109,7 +109,7 @@ function showAnswer() {
         <h1>Total Questions = ${currentQuestionIndex}</h1>
         <h1 style="color:green;">Correct Answers = ${correct}</h1>
         <h1 style="color:red;">Wrong Answers = ${wrong}</h1>
-        <hr style="border: 2px solid black; margin: 10px 0;">
+        <hr>
         <h1>Final Score = ${score}</h1>
         <button type="reset" onclick="window.location.reload()" id="nextQuestion">Restart</button>`;
 }
